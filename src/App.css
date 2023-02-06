@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+:root {
+  --primary-color: #0076a7;
+  --black-color: #000000;
+  --secondary-black-color: #8e8e8e;
+  --white-color: #ffffff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Lato";
+}
+.nav{
+  width: 100%;
+  height: 100px;
+  border: 2px solid blue;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app__flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__flex-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+
+  margin: 0 auto;
+}
+.p-text {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* layout */
+.background {
+  background-image: url("./images/homebackground.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+/* welcome page */
+.welcome{
+  height: 100%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome .modal {
+  width: 544px;
+  height: 496px;
+  border-radius: 8px;
+  background: var(--white-color);
+  padding: 72px;
+}
+.modal h1{
+  font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+   color: #0076A7;
+}
+.p-text-2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #8e8e8e;
+  text-align: center;
+  line-height: 24px;
+  max-width: 348px;
+
+  margin: 12px auto;
+}
+.modal-btn {
+  width: 400px;
+  gap: 20px;
+  margin: 43px auto;
+}
+ .primary-btn {
+   width: 100%;
+   height: 62px;
+   background: var(--primary-color);
+   border-radius: 8px;
+   border: none;
+   color: #fff;
+   font-size: 16px;
+   font-weight: 700;
+   cursor: pointer;
+   transition: 0.3s all ease-in-out;
+   margin-bottom: 10px;
+ }
+
+ .primary-btn:hover {
+   background-color: #368fb4;
+ }
+
+ .primary-btn:disabled,
+ .primary-btn[disabled] {
+   background-color: #cbe4ee;
+   color: #a9bec7;
+ }
+
+ .secondary-btn {
+   width: 100%;
+   height: 62px;
+   background: none;
+   border-radius: 8px;
+   border: 2px solid var(--primary-color);
+   color: var(--primary-color);
+   font-size: 16px;
+   font-weight: 700;
+   cursor: pointer;
+   transition: 0.3s all ease-in-out;
+ }
+
+ .secondary-btn:hover {
+   background-color: #bde0ef;
+   border: 2px solid #0076a7;
+   color: #0076a7;
+ }
+
+ .secondary-btn:disabled,
+ .secondary-btn[disabled] {
+   background-color: #92aeb9;
+   border: 1.5px solid #92aeb9;
+   color: #a3bcc7;
+ }
+.modal-footer {
+  width: 100%;
+  margin-top: 3px;
+}
+.register{
+  height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.reg{
+  padding: 20px;
+    border: 5px soild rebeccapurple;
+}
+.reg .modal{
+width: 544px;
+  height: 530px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+        .modal .modal-btn {
+          width: 400px;
+          gap: 20px;
+        }
+    
+        .modal .progress {
+          width: 400px;
+        }
+    
+        .modal .progress p {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          font-size: 16px;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    
+        .modal .progress .filled {
+          background-color: var(--primary-color);
+          color: var(--white-color);
+        }
+    
+        .modal .progress .dense {
+          border: 1px solid var(--primary-color);
+          color: var(--primary-color);
+        }
+.modal .modal-input {
+  width: 400px;
+  height: 58px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.modal .modal-input input {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid #b2b2b2;
+  padding-left: 20px;
+  padding-right: 10%;
+  outline: none;
+}
+
+.modal .modal-input img {
+  position: absolute;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal .modal-input svg {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  color: var(--secondary-black-color);
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.reg .p-text{
+  margin: 0px auto;
+  text-align: center;
+}
+.reg .modal-footer {
+  width: 90%;
+  margin-top: 3px;
+}
